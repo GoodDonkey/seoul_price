@@ -15,37 +15,23 @@
     <!-- script urls -->
     <script src="{{url_for('static', filename='/js/script.js')}}"></script>
 
-    <title>Datachart</title>
+    <title>HouseSeoul</title>
 </head>
 <body>
 
 <!-- ------------------------- header ------------------------- -->
 <header>
     <div class="header_logo">
-        <i class="fa-solid fa-syringe"></i>
-        <a href="#">서울시 </a>
-    </div>
-    <div class="header_menu">
-        <ul class="header_menu_ul">
-            <li><a href="">헤더메뉴1</a></li>
-            <li><a href="">헤더메뉴2</a></li>
-            <li><a href="">헤더메뉴3</a></li>
-
-        </ul>
-    </div>
-    <div class="header_ham">
-        <i class="fa-solid fa-bars"></i>
+        <a href="#">서울시 HouseView</a>
     </div>
 </header>
 
 <!-- ------------------------- navbar ------------------------- -->
 <div class="navbar">
     <ul class="navbar_ul">
-        <li><a href="">메뉴1</a></li>
-        <li><a href="">메뉴2</a></li>
-        <li><a href="">메뉴3</a></li>
-        <li><a href="">메뉴4</a></li>
-        <li><a href="">메뉴5</a></li>
+        <li><a href="">매매</a></li>
+        <li><a href="">전세</a></li>
+        <li><a href="">월세</a></li>
     </ul>
 </div>
 
@@ -53,27 +39,21 @@
 <!-- ------------------------- contents ------------------------- -->
 <div class="contents">
     <div class="contents_exp">
-
     </div>
-
-    <div class="contents_graph">
-        <div class="contents_gragh_tags">
-            <button onclick="showGraph()">버튼1</button>
-            <button>버튼2</button>
-            <button>버튼3</button>
-            <button>버튼4</button>
-        </div>
-        <br>
         <div class="contents_graph_iframe" style="display: none;" id="iframe_div">
-            <iframe src="http://localhost:5601/app/visualize#/edit/491da7b0-e604-11eb-850e-0f116349053a?embed=true&_g=(filters%3A!()%2CrefreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-15m%2Cto%3Anow))" height="600" width="800"></iframe>
+        <iframe src="http://localhost:5601/app/visualize#/edit/491da7b0-e604-11eb-850e-0f116349053a?embed=true&_g=(filters%3A!()%2CrefreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-15m%2Cto%3Anow))" height="100%" width="100%"></iframe>
         </div>
-
     </div>
 </div>
 
-
-
-
+<div class="page_bar">
+    <div class="user_button">
+        <button onclick="">로그인</button>
+        <button onclick="">로그아웃</button>
+        <button onclick="">회원가입</button>
+        <button onclick="">마이페이지</button>
+    </div>
+</div>
 
 </body>
 </html>
