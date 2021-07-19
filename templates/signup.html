@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="signup.css"> -->
+<link rel="stylesheet" href="signup.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
     .signup_box {
         border: 1px solid;
@@ -51,25 +51,25 @@
     <!-- !PAGE CONTENT! -->
     <div class="w3-main" style="margin-left:250px;height: 100vh;">
 
-        <!-- Top header -->
-        <header class="w3-container w3-xlarge">
-            <p class="w3-left">Sign Up</p>
-        </header>
-        <hr>
-        <div style="margin-left: 25%;height: 100%vh;">
-            <div class="signup_box">
+    <!-- Top header -->
+    <header class="w3-container w3-xlarge">
+        <p class="w3-left">Sign Up</p>
+    </header>
+    <hr>
+    <div style="margin-left: 25%;height: 100%vh;">
+        <div class="signup_box">
 
-                <label>아이디:</label><br><hr>
-                <input type="text" id="newU_id"><button onclick="idcheck()">중복확인</button><br><br>
+            <label>아이디:</label><br><hr>
+            <input type="text" id="newU_id"><button onclick="idcheck()">중복확인</button><br><br>
 
-                <label>비밀번호 :</label><br>
-                <input type="password" id="newU_pw"><br><br>
+            <label>비밀번호 :</label><br>
+            <input type="password" id="newU_pw"><br><br>
 
-                <button onclick="signup()">가입하기</button>
-                <input type="submit" value="취소">
-            </div>
+            <button onclick="signup()">가입하기</button>
+            <input type="submit" value="취소">
         </div>
-        
+    </div>
+    
      
 
 
@@ -126,8 +126,6 @@
             xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
             xhttp.send("u_id=" + document.getElementById("newU_id").value);
         }
-
-        };
 
     </script>
 
