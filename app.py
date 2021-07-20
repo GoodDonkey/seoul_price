@@ -6,11 +6,6 @@ app =  Flask(__name__)
 def index_view():
     return render_template("index.html")
 
-@app.route("/showIframe", methods=["GET"])
-def iframe():
-    data =''
-    return data
-
 @app.route("/login", methods=["GET"])
 def login():
     return render_template("login.html")
