@@ -49,25 +49,22 @@ def login():
 
 @app.route("/login_proc", methods=["POST"])
 def login_proc():
+
     user_id = request.form.get("user_id")
     dao = MemberDAO()
-    print("user_id, dao 전달 확인",user_id)
 
-    return_v = "존재하지 않는 사용자입니다."
+    print("user_id, dao 전달 확인---------",user_id)
 
     if user_id == dao.memid(request.form.get("user_pw")):
+        print("진짜로그인 성공")
         return jsonify(
             result = "200",
-            access_token = create_access_token(identity = user_id),
+            access_token = create_access_token(identity = user_id)
         )
-        # return render_template("index.html")
-    #     print('--------------------222------------------------')
-    #     return_v = '{"key" : "성공"}'
-
-    # print(user_id == dao.memid(request.form.get("user_pw")))
-    # print('===login_proc===')
-
-    # return return_v
+        
+    else:
+        print("가짜로그인 성공")
+        return jsonify(result = "400")
 
 if __name__=="__main__":
     app.run(debug=True, host="127.0.0.1", port=5000)

@@ -57,16 +57,27 @@
             xhttp.onreadystatechange = function (){
 
                 if (this.readyState == 4 && this.status == 200){
-                    
-                    console.log("=======");
+                    appRes = this.response;
+                    appRes = JSON.parse(appRes);
 
-                    // all = JSON.parse(this.responseText);
-                    // console.log(all.access_token);
-                    // localStorage.setItem("jwt-auth-token", all.access_token);
-                    // alert("로그인 성공");
+                    console.log("====login2()함수다===");
+                    console.log(appRes)
+
+                    if (appRes.result == '200') {
+                        console.log("====login2()함수고 result가 200으로 넘어왔다. 진짜 성공===");
+                        localStorage.setItem("jwt-auth-token", appRes.access_token);
+
+                        alert("로그인에 성공하셨습니다. 진짜 성공")
+                        var link = '/';
+                        location.replace(link);
+                    }else{
+                        console.log("====login2()함수다 가짜성공===");
+                        alert("로그인에 실패하셨습니다. 가짜 성공")
+
+                    }
                 };
-                
             };
+            
             query = "user_id="+document.getElementById("user_id").value+"&user_pw="+document.getElementById("user_pw").value;
             console.log(query);
 
@@ -74,7 +85,7 @@
             // xhttp.send();
             
             
-            xhttp.open("POST", "login_proc", true);
+            xhttp.open("POST", "login_proc");
             xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
             xhttp.send(query);
         }
