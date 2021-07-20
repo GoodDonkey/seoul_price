@@ -23,7 +23,7 @@ a {
 
 .header_logo {
   font-size: 24px;
-  color: rgb(26, 58, 58);
+  color: rgb(255, 245, 152);
 }
 
 .header_menu_ul {
@@ -41,6 +41,7 @@ a {
   border-radius: 0px;
   transition: 0.5s;
 }
+
 .header_ham i {
   padding: 8px 12px;
 }

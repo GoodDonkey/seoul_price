@@ -5,44 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- script for fontawesome icons -->
-    <script src="https://kit.fontawesome.com/ed92d3307c.js" crossorigin="anonymous"></script>
-
-    <!-- css urls -->
+    <!-- CSS -->
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="{{url_for('static', filename='/css/style.css')}}">
 
-    <!-- script urls -->
+    <!-- JavaScript -->
     <script src="{{url_for('static', filename='/js/script.js')}}"></script>
 
     <title>HouseSeoul</title>
 </head>
+
 <body>
 
-<!-- ------------------------- header ------------------------- -->
+<!-- Header -->
 <header>
     <div class="header_logo">
-        <a href="#">서울시 HouseView</a>
+        <h1>서울시 HouseView</h1>
     </div>
 </header>
 
-<!-- ------------------------- navbar ------------------------- -->
+<!-- Navbar -->
 <div class="navbar">
     <ul class="navbar_ul">
-        <li><a onclick="iframe01">지역</a></li>
-        <li><a onclick="iframe02">매매</a></li>
-        <li><a onclick="iframe03">전세</a></li>
-        <li><a onclick="iframe04">월세</a></li>
+        <li><a href="javascript:iframe01();">지역</a></li>
+        <li><a href="javascript:iframe02();">매매</a></li>
+        <li><a href="javascript:iframe03();">월세</a></li>
+        <li><a href="javascript:iframe04();">전세</a></li>
     </ul>
 </div>
 
-<div class="iframe">
-</div>
 
-<!-- ------------------------- contents ------------------------- -->
+<!-- Contents -->
 <div class="contents">
     <div class="iframe">
-    </div>
         <div class="iframe" id="iframe01" style="display: none;">프레임태그01</div>
         <div class="iframe" id="iframe02" style="display: none;">프레임태그02</div>
         <div class="iframe" id="iframe03" style="display: none;">프레임태그03</div>
