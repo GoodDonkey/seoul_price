@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="int-area">
+        <input type="text" name="user_id" id="user_id" autocomplete="off" required>
+        <label for="id">USER NAME</label>
+    </div>
+    <div class="int-area">
+        <input type="password" name="user_pw" id="user_pw" autocomplete="off" required>
+        <label for="pw">PASSWORD</label>
+    </div>
+    <div class="btn-area">
+        <button onclick="login2()">LOGIN</button> 
+    </div>
+    <script>
+function login2(){
+        const xhttp = new XMLHttpRequest();
+
+        xhttp.onreadystatechange = function (){
+
+            if (this.readyState == 4 && this.status == 200){
+                alert(33);
+                console.log("=======");
+            };
+            
+        };
+        query = "useperson1&user_pw=seoulperson1";
+        console.log(query);
+        xhttp.open("POST", "login_proc", true);
+        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        alert('---');
+        xhttp.send(query);
+    }
+    </script>
+    
+</body>
+</html>
