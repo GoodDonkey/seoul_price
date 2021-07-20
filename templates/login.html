@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="jquery-3.4.1.js"></script>
+    <title>login-form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../static/css/login.css">
     <link rel="stylesheet" href="{{url_for('static', filename='/css/login.css')}}">
     
@@ -15,23 +15,17 @@
 <body>
     <section class="login-form">
         <!-- <h1>Housing Price</h1> -->
-        
-
-        <form action="">
             <div class="int-area">
-                <input type="text" name="id" id="id"
-                autocomplete="off" required>
+                <input type="text" name="user_id" id="user_id" autocomplete="off" required>
                 <label for="id">USER NAME</label>
             </div>
             <div class="int-area">
-                <input type="password" name="pw" id="pw"
-                autocomplete="off" required>
+                <input type="password" name="user_pw" id="user_pw" autocomplete="off" required>
                 <label for="pw">PASSWORD</label>
             </div>
             <div class="btn-area">
-                <button type="submit">LOGIN</button> 
+                <button onclick="login2()">LOGIN</button> 
             </div>
-        </form>
         <div class="caption">
             <a href="">Forgot Password?</a>
         </div>
@@ -40,21 +34,63 @@
     </section>
 
     <script>
-        let id = $('#id');
-        let pw = $('#pw');
-        let btn = $('#btn');
+        // let id = $('#user_id');
+        // let pw = $('#user_pw');
+        // let btn = $('#btn');
 
-        $(btn).on('click', function() {
-            if($(id).val() == "") {
-                $(id).next('label').addClass('warning');
-                setTimeout(function() {
-                    $('label').removeClass('warning');
-                },1500);
-            }
-            else if($(pw).val() == "") {
-                $(pw).next('label').addClass('warning');
-            }
-        });
+        // $(btn).on('click', function() {
+        //     if($(id).val() == "") {
+        //         $(id).next('label').addClass('warning');
+        //         setTimeout(function() {
+        //             $('label').removeClass('warning');
+        //         },1500);
+        //     }
+        //     else if($(pw).val() == "") {
+        //         $(pw).next('label').addClass('warning');
+        //     }
+        // });
+
+
+        function login2(){
+            const xhttp = new XMLHttpRequest();
+
+            xhttp.onreadystatechange = function (){
+
+                if (this.readyState == 4 && this.status == 200){
+                    appRes = this.response;
+                    appRes = JSON.parse(appRes);
+
+                    console.log("====login2()함수다===");
+                    console.log(appRes)
+
+                    if (appRes.result == '200') {
+                        console.log("====login2()함수고 result가 200으로 넘어왔다. 진짜 성공===");
+                        localStorage.setItem("jwt-auth-token", appRes.access_token);
+
+                        alert("로그인에 성공하셨습니다. 진짜 성공")
+                        var link = '/';
+                        location.replace(link);
+                    }else{
+                        console.log("====login2()함수다 가짜성공===");
+                        alert("로그인에 실패하셨습니다. 가짜 성공")
+
+                    }
+                };
+            };
+            
+            query = "user_id="+document.getElementById("user_id").value+"&user_pw="+document.getElementById("user_pw").value;
+            console.log(query);
+
+            // xhttp.open("GET", "login_proc?"+query, true);
+            // xhttp.send();
+            
+            
+            xhttp.open("POST", "login_proc");
+            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhttp.send(query);
+        }
+
+
     </script>
 
 </body>
