@@ -1,15 +1,11 @@
 
-function showGraph() {
+function importIframe() {
+    xhttp.open("GET", "showIframe");
+    xhttp.send();
     const xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
-                data = this.responseText;
-
-
-                document.getElementById("iframe_div").style.display = "block";
+                document.getElementById("iframe_div").innerHTML = this.responseText;
             }
         }    
-    xhttp.open("GET", "graph");
-    xhttp.send();
 }
-
