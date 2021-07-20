@@ -1,7 +1,9 @@
-body {
+body, html {
   margin: 0;
   padding: none;
   border: none;
+  height: 100%;
+  width: 100%;
 }
 
 header {
@@ -75,19 +77,44 @@ a {
 
 /* -------------contents------------- */
 
-.contents {
+.container {
   background-color: rgb(0, 63, 122);
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
+}
+
+.contents {
+  background-color: rgb(122, 0, 47);
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+.contents::after {
+  background-color: rgb(0, 63, 122);
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.contentsButton {
+  display: flex;
+  justify-content:center;
+  width: 100%;
 }
 
 .contents_exp {
   display: block;
 }
 
-.contents_graph {
+.contents_graph_iframe {
   display: block;
+  height: 100%;
+  width: 100%;
 }
 
 .contents_gragh_tags {

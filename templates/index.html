@@ -29,7 +29,7 @@
 <!-- ------------------------- navbar ------------------------- -->
 <div class="navbar">
     <ul class="navbar_ul">
-        <li><a href="dashboard01">매매</a></li>
+        <li><a onclick="showContents01()">매매</a></li>
         <li><a href="dashboard01">전세</a></li>
         <li><a href="dashboard01">월세</a></li>
     </ul>
@@ -40,15 +40,30 @@
 
 
 <!-- ------------------------- contents ------------------------- -->
-<div class="contents">
-    <div class="contents_exp">
-    </div>
-        <div class="contents_graph_iframe" style="display: none;" id="iframe_div">
-        <iframe src="http://localhost:5601/app/visualize#/edit/491da7b0-e604-11eb-850e-0f116349053a?embed=true&_g=(filters%3A!()%2CrefreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-15m%2Cto%3Anow))" height="100%" width="100%"></iframe>
+<div class="container">
+    <div class="contents" style="display: none;" id="contents_div">
+
+        <!-- 버튼들 -->
+        <div class="contentsButton">
+            <button onclick="importIframe()">임시 버튼</button>
+            <button onclick="importIframe2()">임시 버튼</button>
+            <button onclick="importIframe3()">임시 버튼</button>
         </div>
+
+        <!-- 보여줄 컨텐츠를 설명하는 div -->
+        <div class="contents_exp">
+        </div>
+        
+        <!-- 보여줄 iframe이 들어가는 div -->
+        <div class="contents_graph_iframe" style="display: none;" id="iframe_div">
+        </div>
+        <div class="contents_graph_iframe" style="display: none;" id="iframe_div2">
+        </div>
+        <div class="contents_graph_iframe" style="display: none;" id="iframe_div3">
+        </div>
+
     </div>
 </div>
-
 <div class="page_bar">
     <div class="user_button">
         <button id="user_btn_login"><a href="/login">로그인</a></button>

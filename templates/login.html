@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <link rel="stylesheet" href="login.css"> -->
     <script src="jquery-3.4.1.js"></script>
     <link rel="stylesheet" href="../static/css/login.css">
     <link rel="stylesheet" href="{{url_for('static', filename='/css/login.css')}}">
@@ -17,7 +18,7 @@
         <!-- <h1>Housing Price</h1> -->
         
 
-        <form action="">
+        <form action="/login" method="POST">
             <div class="int-area">
                 <input type="text" name="id" id="id"
                 autocomplete="off" required>
