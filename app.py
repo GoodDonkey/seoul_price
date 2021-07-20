@@ -11,5 +11,9 @@ def iframe():
     data =''
     return data
 
+@app.route("/login", methods=["GET"])
+def login():
+    return render_template("login.html")
+
 if __name__=="__main__":
     app.run(debug=True, host="127.0.0.1", port=5000)
