@@ -33,11 +33,11 @@ a {
 }
 
 .header_menu_ul li {
-  padding: 8px 12px;
+  padding: none;
 }
 
 .header_menu_ul li:hover {
-  background-color: rgb(0, 100, 100);
+  background-color: rgb(253, 253, 253);
   border-radius: 0px;
   transition: 0.5s;
 }
@@ -46,7 +46,7 @@ a {
   padding: 8px 12px;
 }
 
-/* ----------------------------------- */
+/* Navbar */
 .navbar {
   background-color: rgb(0, 0, 0);
 }
@@ -74,7 +74,7 @@ a {
   transition: 0.5s;
 }
 
-/* -------------contents------------- */
+/* Contents */
 
 .contents {
   background-color: rgb(0, 63, 122);
@@ -97,7 +97,7 @@ a {
   justify-content: space-around;
 }
 
-/* ---pagebar---*/
+/* Pagebar */
 .page_bar {
   margin: 0px;
   padding: 0px;
