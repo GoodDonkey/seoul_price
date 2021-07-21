@@ -5,6 +5,7 @@ function iframe01() {
     xhttp.send();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("main").style.display = "none";
             document.getElementById("iframe02").style.display = "none";
             document.getElementById("iframe03").style.display = "none";
             document.getElementById("iframe04").style.display = "none";
@@ -22,6 +23,7 @@ function iframe02() {
     xhttp.send();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("main").style.display = "none";
             document.getElementById("iframe01").style.display = "none";
             document.getElementById("iframe03").style.display = "none";
             document.getElementById("iframe04").style.display = "none";
@@ -38,6 +40,7 @@ function iframe03() {
     xhttp.send();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("main").style.display = "none";
             document.getElementById("iframe01").style.display = "none";
             document.getElementById("iframe02").style.display = "none";
             document.getElementById("iframe04").style.display = "none";
@@ -54,6 +57,7 @@ function iframe04() {
     xhttp.send();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("main").style.display = "none";
             document.getElementById("iframe01").style.display = "none";
             document.getElementById("iframe02").style.display = "none";
             document.getElementById("iframe03").style.display = "none";
