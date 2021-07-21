@@ -13,11 +13,11 @@
      
 &nbsp;&nbsp;&nbsp;<h3><details><summary> 이유경 </summary></p>
 <a href = "https://github.com/Yukyeong-Lee"><h6>&nbsp;&nbsp;: GitHub LINK</a></details>
-&nbsp;&nbsp;&nbsp;키바나 작업 및 css작업
+&nbsp;&nbsp;&nbsp;키바나 시각화 작업 및 css작업
      
 &nbsp;&nbsp;&nbsp;<h3><details><summary> 박태영 </summary></p>
 <a href = "https://github.com/taeyoung0103"><h6>&nbsp;&nbsp;: GitHub LINK</a></details>
-&nbsp;&nbsp;&nbsp;키바나 작업 및 발표
+&nbsp;&nbsp;&nbsp;키바나 시각화 작업 및 발표
 
 <br><br><br>
 
