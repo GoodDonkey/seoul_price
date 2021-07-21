@@ -4,6 +4,7 @@
 <a href = "https://github.com/GoodDonkey"><h6>&nbsp;&nbsp;: GitHub LINK</a></details>
  
 &nbsp;&nbsp;&nbsp;<h3><details><summary> 김영민 </summary></p>
+&nbsp;&nbsp;&nbsp;<p>flask템플릿 레이아웃, 주제선정, 자료찾기, 구현방법설정</p>
 
 <a href = "https://github.com/mechaniclib"><h6>&nbsp;&nbsp;: GitHub LINK</a></details>
 
