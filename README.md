@@ -2,8 +2,8 @@
 &nbsp;&nbsp;&nbsp;<h3><details><summary> 장동기 </summary></p>
 
 <a href = "https://github.com/GoodDonkey"><h6>&nbsp;&nbsp;: GitHub LINK</a><br>
- &nbsp;&nbsp;&nbsp;지도 이용한 시각화, 백앤드 기능 구현, 프로젝트 관리를 담당했습니다.
  </details>
+  &nbsp;&nbsp;&nbsp;지도 이용한 시각화, 백앤드 기능 구현, 프로젝트 관리를 담당했습니다.
  
 &nbsp;&nbsp;&nbsp;<h3><details><summary> 김영민 </summary></p>
 &nbsp;&nbsp;&nbsp;<p>flask템플릿 레이아웃, 주제선정, 자료찾기, 구현방법설정</p>
