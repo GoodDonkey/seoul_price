@@ -11,15 +11,15 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 아파트, 빌라, 오피스텔의 가격을 지역별로 나눠서 분석?</p></details>
 
 
-&nbsp;&nbsp;&nbsp;<h3><details><summary> 2일차 [210622 / D-2] </summary></p>
-&nbsp;&nbsp;&nbsp;1. Table 수정 및 데이터 추가삽입 : 'champions'</p>
-&nbsp;&nbsp;&nbsp;2. html main 페이지 제작</p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- logo, 배너 img 제작</p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 배너 link 연결</p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- css 파일제작</p>
+&nbsp;&nbsp;&nbsp;<h3><details><summary> 2일차 [210719 / 월요일] </summary></p>
+&nbsp;&nbsp;&nbsp;1. 아이디어 개선 및 html제작</p>
+&nbsp;&nbsp;&nbsp;2. kibana 시각화 이용하여 제작</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Metric으로 최대값, 최소값</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 선그래프로 집종류별 변화 분석</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Tag Cloud로 지역별 가격 시각화</p>
 &nbsp;&nbsp;&nbsp;3. app.py / dao.py code 제작</p></details>
 
-&nbsp;&nbsp;&nbsp;<h3><details><summary> 3일차 [210623 / D-1] </summary></p>
+&nbsp;&nbsp;&nbsp;<h3><details><summary> 3일차 [210720 / 화요일] </summary></p>
 &nbsp;&nbsp;&nbsp;1. detail 코드 제작</p>
 &nbsp;&nbsp;&nbsp;2. detail 디자인 수정</p>
 </details> 
