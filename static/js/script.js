@@ -62,3 +62,7 @@ function iframe04() {
         }
     }
 }
+
+function forgot() {
+        alert("어쩔 수 없습니다.")
+        }

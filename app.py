@@ -1,8 +1,12 @@
 from flask import Flask, request, render_template, url_for, jsonify
 from flask_jwt_extended import *
+from flask_recaptcha import ReCaptcha
 from dao import *
 
 app =  Flask(__name__)
+app.config['RECAPTCHA_SITE_KEY'] = '6LdI60gbAAAAAO9llS8p0UrBetVojtlG-1kuGm-l'
+app.config['RECAPTCHA_SECRET_KEY'] = '6LdI60gbAAAAAPl2g8q9guBs2lFohFUnNNkdpLSQ'
+recaptcha = ReCaptcha(app)
 
 app.config.update(
     DEBUG = True,
@@ -11,9 +15,16 @@ app.config.update(
 
 jwt = JWTManager(app)
 
-@app.route("/", methods=["GET"])
+@app.route("/", methods=["GET", "POST"])
 def index_view():
-    return render_template("index.html")
+    message = ''  # Create empty message
+    print(request.method)
+    if request.method == 'POST':  # Check to see if flask.request.method is POST
+        if recaptcha.verify():  # Use verify() method to see if ReCaptcha is filled out
+            message = 'Thanks for filling out the form!'  # Send success message
+        else:
+            message = 'Please fill out the ReCaptcha!'  # Send error message
+    return render_template("index.html", message=message)
 
 @app.route("/iframe01", methods=["POST"])
 def iframe01():
@@ -55,7 +66,7 @@ def login_proc():
 
     print("user_id, dao 전달 확인---------",user_id)
 
-    if user_id == dao.memid(request.form.get("user_pw")):
+    if user_id and user_id == dao.memid(request.form.get("user_pw")):
         print("진짜로그인 성공")
         return jsonify(
             result = "200",
