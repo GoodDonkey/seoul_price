@@ -1,5 +1,5 @@
 <h2> :dart: Subject </h2>
-<h3>최근 몇년 간의 서울 주택가격 현황(11' ~18')</h3><p> 
+<h3>최근 몇년 간의 서울 주택가격 현황(11' ~ 18')</h3><p> 
 
 <br>
 
@@ -14,7 +14,7 @@
  
 &nbsp;&nbsp;&nbsp;<h3><details><summary> 김수연 </summary></p>
 <a href = "https://github.com/metaego"><h6>&nbsp;&nbsp;: GitHub LINK</a></details>
-&nbsp;&nbsp;&nbsp;orcle 설계 및 로그인 기능 구현(with 동기)
+&nbsp;&nbsp;&nbsp;oracle 설계 및 로그인 기능 구현(with 동기)
      
 &nbsp;&nbsp;&nbsp;<h3><details><summary> 이유경 </summary></p>
 <a href = "https://github.com/Yukyeong-Lee"><h6>&nbsp;&nbsp;: GitHub LINK</a></details>
