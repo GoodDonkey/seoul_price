@@ -1,6 +1,7 @@
 <h2> :dart: Subject </h2>
-최근 몇년간의 서울 집갑 변화 시각화 
+<h3>최근 몇년간의 서울 집갑 변화 시각화</h3><p> 
 
+<br>
 
 <h2> :fire: Team(R&R)
 &nbsp;&nbsp;&nbsp;<h3><details><summary> 장동기 </summary></p>
