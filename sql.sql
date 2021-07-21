@@ -4,8 +4,6 @@ create table usertb (
 	name    varchar(20)    not null
 );
 
-
-
 insert into usertb (ID, PW, name) 
 values ('seoulperson1', 'seoulperson1', 'Kimcci');
 
