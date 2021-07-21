@@ -14,7 +14,7 @@ header {
 
 a {
   text-decoration: none;
-  color: rgb(86, 53, 124);
+  color: rgb(255, 255, 255);
 }
 
 .fa-solid {
@@ -48,7 +48,7 @@ a {
 
 /* Navbar */
 .navbar {
-  background-color: rgb(193, 189, 199);
+  background-color: rgba(63, 49, 90, 0.678);
 }
 
 .navbar_ul {
@@ -62,14 +62,40 @@ a {
 }
 
 .navbar_ul li {
-  padding: 8px 12px;
+  position: relative;
+  transform: scale(.7); filter:blur(none);
+  padding: 5px 10px;
   flex-grow: 1;
   list-style: none;
   text-align: center;
 }
+/* .navbar_li a:after {content: ""; position: absolute; background:rgb(86, 53, 124);} */
+.navbar_ul li:before {content: ""; position: absolute; left: 0; top:0; width: 0; height: 1px; background:rgb(95, 28, 150); transition: width .3s;}
+.navbar_ul li:hover:before { animation: line1 .5s both;}
+.navbar_ul li:after {content: ""; position: absolute; left: 0; top:0; width: 1px; height: 0; background:rgb(95, 28, 150)} 
+.navbar_ul li:hover:after { animation: line2 .5s both;}
+.navbar_ul li a:before {content: ""; position: absolute; right: 0; top:0; width: 1px; height: 0; background:rgb(95, 28, 150)}
+.navbar_ul li a:after {content: ""; position: absolute; right: 0; bottom:0; width: 0; height: 1px; background:rgb(95, 28, 150)}
+.navbar_ul li:hover a:before { animation: line2 .5s .2s both;}
+.navbar_ul li:hover a:after { animation: line1 .5s .2s both;}
+
+@keyframes line1 {
+  0% {left: 0; width: 0;}
+  49% {left: 0; width: 100%;}
+  50% {left: inherit; right: 0; width: 100%;}
+  100% {left: inherit; right: 0; width:0;}
+}
+@keyframes line2 {
+  0% {left: 0; height: 0;}
+  49% {left: 0; height: 100%;}
+  50% {top: inherit; bottom: 0; height: 100%;}
+  100% {top: inherit; bottom: 0; height:0;}
+}
+
 
 .navbar_ul li:hover {
-  background-color: rgba(221, 219, 243, 0.664);
+  transform: scale(1.2); filter:blur(0);
+  background-color: rgba(221, 219, 243, 664);
   border-radius: 0px;
   transition: 0.5s;
 }
