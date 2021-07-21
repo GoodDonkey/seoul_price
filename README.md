@@ -1,4 +1,4 @@
-<h2> : Team(R&R)
+<h2> :fire: Team(R&R)
 &nbsp;&nbsp;&nbsp;<h3><details><summary> 장동기 </summary></p>
 <a href = "https://github.com/GoodDonkey"><h6>&nbsp;&nbsp;: GitHub LINK</a><br></details>
 &nbsp;&nbsp;&nbsp;지도 이용한 시각화, 백앤드 기능 구현, 프로젝트 관리를 담당했습니다.
@@ -52,4 +52,49 @@
 <br><br><br>
 
 
+<h2>:smiley: 조원 한 줄 리뷰</h2>
+<h3>
+<details>
+<summary> 장동기 </summary></p>
+한 줄 평을 적어주세요</p>
+</details>
+</h3>
 
+<br>
+
+<h3>
+<details>
+<summary> 김영민 </summary></p>
+한 줄 평을 적어주세요</p>
+</details>
+</h3>
+
+<br>
+
+<h3>
+<details>
+<summary> 박태영 </summary></p>
+한 줄 평을 적어주세요</p>
+</details>
+</h3>
+
+<br>
+
+
+<h3>
+<details>
+<summary> 이유경 </summary></p>
+한 줄 평을 적어주세요</p>
+</details>
+</h3>
+
+<br>
+
+<h3>
+<details>
+<summary> 김수연 </summary></p>
+한 줄 평을 적어주세요</p>
+</details>
+</h3>
+
+<br>
