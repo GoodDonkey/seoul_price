@@ -8,13 +8,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(185, 83, 0);
+  background-color: rgb(228, 210, 243);
   padding: 0px;
 }
 
 a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(86, 53, 124);
 }
 
 .fa-solid {
@@ -48,7 +48,7 @@ a {
 
 /* Navbar */
 .navbar {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(193, 189, 199);
 }
 
 .navbar_ul {
@@ -69,7 +69,7 @@ a {
 }
 
 .navbar_ul li:hover {
-  background-color: rgba(255, 0, 0, 0.664);
+  background-color: rgba(221, 219, 243, 0.664);
   border-radius: 0px;
   transition: 0.5s;
 }
@@ -77,7 +77,7 @@ a {
 /* Contents */
 
 .contents {
-  background-color: rgb(0, 63, 122);
+  background-color: rgb(209, 188, 247);
   display: flex;
   justify-content: center;
   height: 100vh;
@@ -102,7 +102,7 @@ a {
   margin: 0px;
   padding: 0px;
   border: 0px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(192, 189, 219, 0.664);
   align-items: center;
   text-align: center;
 }
