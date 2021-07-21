@@ -8,8 +8,8 @@ class MemberDAO:
 
         data = ''
         try:
-            # conn = cx_Oracle.connect(user="SCOTT", password="TIGER", dsn="xe")
-            conn = cx_Oracle.connect("scott/tiger@localhost/xe")
+            conn = cx_Oracle.connect(user="SCOTT", password="TIGER", dsn="xe")
+            # conn = cx_Oracle.connect("scott/tiger@localhost/xe")
             cur = conn.cursor()
 
             try:
