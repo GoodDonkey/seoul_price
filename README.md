@@ -28,7 +28,7 @@
 &nbsp;&nbsp;&nbsp;2. 데이터 수집 및 수정</p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 서울 아파트 실거래가 관련 데이터 - http://datakorea.datastore.or.kr/profile/geo/04000KR11/#category_%EC%9E%90%EC%82%B0,%EB%B6%80%EC%B1%84,%EC%86%8C%EB%93%9D_%ED%98%84%ED%99%A9</p>
 &nbsp;&nbsp;&nbsp;3. 구체화</p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 꾸준히 상승하는 서울집갑, 얼마나 상승하고있는지 분석?</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 꾸준히 상승하는 서울집값, 얼마나 상승하고있는지 분석?</p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 아파트, 빌라, 오피스텔 가격 변동을 년도로 나눠서 분석?</p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 아파트, 빌라, 오피스텔의 가격을 지역별로 나눠서 분석?</p></details>
 
