@@ -1,4 +1,4 @@
-<h2> : Team
+<h2> : Team(R&R)
 &nbsp;&nbsp;&nbsp;<h3><details><summary> 장동기 </summary></p>
 
 <a href = "https://github.com/GoodDonkey"><h6>&nbsp;&nbsp;: GitHub LINK</a></details>
@@ -11,6 +11,7 @@
 &nbsp;&nbsp;&nbsp;<h3><details><summary> 김수연 </summary></p>
 
 <a href = "https://github.com/metaego"><h6>&nbsp;&nbsp;: GitHub LINK</a></details>
+ orcle 설계 및 로그인 기능 구현(with 동기)
      
 &nbsp;&nbsp;&nbsp;<h3><details><summary> 이유경 </summary></p>
 
@@ -51,4 +52,5 @@
 
 
 <br><br><br>
+
 
