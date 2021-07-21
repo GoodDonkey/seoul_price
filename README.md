@@ -1,3 +1,38 @@
+<h2> :dancers: Team
+&nbsp;&nbsp;&nbsp;<h3><details><summary> 장동기 </summary></p>
+
+<a href = "https://github.com/GoodDonkey"><h6>&nbsp;&nbsp;: GitHub LINK</a></details>
+
+<!--장수정-->  
+&nbsp;&nbsp;&nbsp;<h3><details><summary> 장수정 </summary></p>
+<h3> &nbsp;:heavy_check_mark: Role</p>
+<h6> &nbsp; 1. diagrams 제작</p>
+     &nbsp; 2. Github 및 협업환경 설정 및 관리</p>
+     &nbsp; 3. CSS / html 제작 및 디자인</p>
+     &nbsp;&nbsp;&nbsp;: 필요한 image illustration 제작</p>
+     &nbsp; 4. Flask 코드와 html 연결 및 정리작업 </p>
+     &nbsp; 5. 코드제작 서포트</p>
+     &nbsp;&nbsp;&nbsp; - table data 입력</p>
+     &nbsp;&nbsp;&nbsp; - app.py 제작</p>
+<h3> &nbsp;:heavy_check_mark: GitHub LINK</p>
+<a href = "https://github.com/sujeong-jang-creator"><h6>&nbsp;&nbsp;: Sujeong's GitHub LINK</a></details>  
+
+<!--정주영B-->  
+&nbsp;&nbsp;&nbsp;<h3><details><summary> 정주영B </summary></p>
+<h3> &nbsp;:heavy_check_mark: Role</p>
+<h6> &nbsp; 1. Table 제작, 데이터 삽입</p>     
+     &nbsp; 2. image 데이터 수집</p>
+     &nbsp; > table value 약 400개, image data 약 200개</p>
+     &nbsp; 3. 코드제작</p>
+     &nbsp;&nbsp;&nbsp;- Flask를 이용한 DAO와 HTML 연결하는 코드제작</p>
+     &nbsp;&nbsp;&nbsp;- DB table을 html을 통해 검색시 데이터를 추출 할 수 있는 코드제작</p>
+     &nbsp;&nbsp;&nbsp;- value값을 정확히, 다 입력하지 않아도 검색 가능한 코드제작</p>
+     &nbsp; 4. CSS 코드 서포트</p>
+     &nbsp; 5. Searching Information</p>
+<h3> &nbsp;:heavy_check_mark: GitHub LINK</p>
+<a href = "https://github.com/rnaqpddl123"><h6>&nbsp;&nbsp;: Juyeong B's GitHub LINK</a></details> 
+
+<br><br><br>
 
 <!-- 날짜별 진행과정-->
 <h2> :calendar: Progress by date
